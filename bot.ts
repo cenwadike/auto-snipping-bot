@@ -245,7 +245,7 @@ export interface BotConfig {
             tokenAmountIn,
             this.config.sellSlippage,
             this.config.wallet,
-            'sell',
+            'buy',
             );
 
             if (result.confirmed) {
