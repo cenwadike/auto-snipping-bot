@@ -64,8 +64,3 @@ export const MAX_POOL_SIZE = retrieveEnvVariable('MAX_POOL_SIZE', logger);
 export const BAG_TO_MOON = Number(retrieveEnvVariable('BAG_TO_MOON', logger));
 export const USE_SNIPE_LIST = retrieveEnvVariable('USE_SNIPE_LIST', logger) === 'true';
 export const SNIPE_LIST_REFRESH_INTERVAL = Number(retrieveEnvVariable('SNIPE_LIST_REFRESH_INTERVAL', logger));
-
-// Kafka
-export const BROKER = retrieveEnvVariable('BROKER', logger);
-export const KAFKA_USERNAME = retrieveEnvVariable('KAFKA_USERNAME', logger);
-export const KAFKA_PASSWORD = retrieveEnvVariable('KAFKA_PASSWORD', logger);
