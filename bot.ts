@@ -245,7 +245,7 @@ export interface BotConfig {
             tokenAmountIn,
             this.config.sellSlippage,
             this.config.wallet,
-            'buy',
+            'sell',
             );
 
             if (result.confirmed) {
@@ -344,7 +344,7 @@ export interface BotConfig {
                 ]
             : []),
             ...innerTransaction.instructions,
-            ...(direction === 'sell' ? [createCloseAccountInstruction(ataIn, wallet.publicKey, wallet.publicKey)] : []),
+            ...(direction === 'sell' ? [] : []),
         ],
         }).compileToV0Message();
 
